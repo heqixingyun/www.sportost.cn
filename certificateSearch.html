@@ -326,7 +326,7 @@ window.location.href = "https://www.sportosta.org.cn/tyzj/info/certificateSearch
 
     // 渲染表格数据（核心：只更新tbody）
     function renderTable(data){
-      tableBody.innerHTML = data.map(item => `
+      tableBody.innerHTML = data.map(item => 
         <tr>
           <td>${item.id}</td>
           <td>${item.name}</td>
@@ -337,7 +337,7 @@ window.location.href = "https://www.sportosta.org.cn/tyzj/info/certificateSearch
           <td>${item.b3}</td>
 
         </tr>
-      `).join('');
+      ).join('');
     }
   </script>
 
