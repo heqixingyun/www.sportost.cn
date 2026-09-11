@@ -209,25 +209,22 @@ function toIndex(){
 
     // 页面加载先初始化表格
     initTable();
-	function sayHello(b1, b2, b3) {
-		const newData = [
-          { id: ${b1}, name: '321324********1021', age: '游泳救生员', city: '五级' ,b1:'464003008506315',b2:'<img id="pic" src="./国家职业资格证书查询_files/1.jpg" width="50" height="50" onmouseover="picMouseOver(this)" onmouseout="picMouseOut(this)">',b3:' '},
-            { id: ${b1}, name: '321324********1021', age: '社会体育指导员-游泳', city: '五级' ,b1:'2464003008506424 ',b2:'<img id="pic" src="./国家职业资格证书查询_files/1
-		   .jpg" width="50" height="50" onmouseover="picMouseOver(this)" onmouseout="picMouseOut(this)">',b3:' '}
-                ];
-        // 局部更新tbody，完全不重绘整个表格，无抖动、无塌陷
-        renderTable(newData);
-      }, 800);
-	
-	
- 
+
 function search(){
     var name=$("#queryName").val();
  	var certificateNo=$("#queryCertificateNo").val();
 	var cardNo= $("#queryCardno").val();
 	var verifyData= $("#queryVerifyData").val();
  	if(name.trim()=='李文慧'){
-    sayHello(name.trim(),1,1);
+setTimeout(() => {
+        const newData = [
+          { id: '李文慧', name: '321324********1021', age: '游泳救生员', city: '五级' ,b1:'464003008506315',b2:'<img id="pic" src="./国家职业资格证书查询_files/20260501180014_8759_26.jpg" width="50" height="50" onmouseover="picMouseOver(this)" onmouseout="picMouseOut(this)">',b3:' '},
+            { id: '李文慧', name: '321324********1021', age: '社会体育指导员-游泳', city: '五级' ,b1:'2464003008506424 ',b2:'<img id="pic" src="./国家职业资格证书查询_files/20260501180014_8759_26.jpg" width="50" height="50" onmouseover="picMouseOver(this)" onmouseout="picMouseOut(this)">',b3:' '}
+                ];
+        // 局部更新tbody，完全不重绘整个表格，无抖动、无塌陷
+        renderTable(newData);
+      }, 800);
+
 }else{
 
 	if(name.trim()==''){
