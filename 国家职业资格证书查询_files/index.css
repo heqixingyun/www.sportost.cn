@@ -1,0 +1,93 @@
+.mainbody{
+    padding-bottom: 15px;
+}
+.popdiv {
+	color: #f00;
+	position: absolute;
+	width: 295px;
+	background-color: #E7EDF0;
+	border: 1px solid #dfe5e8;
+	padding: 5px;
+	font-size: 12px;
+	right: 15px;
+	top:43px;
+}
+
+.popdiv span {
+	font-width: 100px;
+}
+
+.mainbody .title{
+    color:#3560a0 ;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: "microsoft yahei", "雅黑", Tahoma, Arial, Helvetica, STHeiti;
+    border-bottom: solid 2px #CCCCCC;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+.mainbody .title .tit{
+    border-bottom: solid 2px #3560a0;
+    padding-bottom: 3px;
+}
+.mainbody .title .more{
+    color:#FFF ;
+    font-size: 10px;
+    float: right;
+    background-color: #999;
+    padding:1px 5px;
+     border-radius:15px;
+     margin-top: 7px;
+}
+.mtzgk .tabBox1{
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.mtzgk .tabBox1 li {
+    border-bottom: dashed 1px #cecece;
+    list-style: none;
+    margin-left: -40px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 35.9px;
+}
+.mtzgk .tabBox1 li:hover {
+    border-bottom: dashed 1px #f0f0f0;
+}
+.mtzgk .tabBox1 li a {
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.mtzgk .tabBox1 li .time{
+    float: right;
+    color: #ccc;
+}
+
+.mainbody .queryDiv{
+    padding-top: 10px;
+}
+.mainbody .queryDiv .block{
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+.mainbody .queryDiv .name{
+    padding: 5px;
+}
+
+.mainbody .loginDiv{
+    padding-top: 10px;
+}
+.mainbody .loginDiv .block{
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    clear: both;
+}
+.mainbody .loginDiv .name{
+    padding: 5px;
+}
