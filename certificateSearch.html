@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html utf-8>
 <!-- saved from url=(0060)https://www.sportosta.org.cn/tyzj/info/certificateSearch.jsp -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -339,3 +340,353 @@ window.location.href = "https://www.sportosta.org.cn/tyzj/info/certificateSearch
 
 
 </body></html>
+=======
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.sportosta.org.cn/tyzj/info/certificateSearch.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<link href="./国家职业资格证书查询_files/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./国家职业资格证书查询_files/jquery-3.5.1.min.js.下载"></script>
+<link href="./国家职业资格证书查询_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./国家职业资格证书查询_files/bootstrap.min.js.下载"></script>
+<link href="./国家职业资格证书查询_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script src="./国家职业资格证书查询_files/layer.js.下载" type="text/javascript"></script><link rel="stylesheet" href="./国家职业资格证书查询_files/layer.css" id="layuicss-skinlayercss">
+<title>国家职业资格证书查询</title>
+<script>
+  
+
+var qzt = $.extend({}, qzt);/* 全局对象 */
+var querySign ="3be70f91f80f80df832b0aef22638017" ;
+
+/**
+ * 获得项目根路径
+ * 
+ * 使用方法：bp();
+ */
+qzt.bp = function() {
+	var curWwwPath = window.document.location.href;
+	var pathName = window.document.location.pathname;
+	var pos = curWwwPath.indexOf(pathName);
+	var localhostPaht = curWwwPath.substring(0, pos);
+	var projectName = pathName
+			.substring(0, pathName.substr(1).indexOf('/') + 1);
+	return (localhostPaht + projectName);
+};
+
+ 
+
+$(function(){
+	
+	 
+});
+
+
+function onloadMethod(){
+ 	changeVerifyData();
+}
+ 
+function changeVerifyData(){
+	var t = new Date().getTime() ;
+	var url = qzt.bp() + "/getImageController/getVerifyData?t=" + t;
+	$("#codeImg").attr("src", url);
+}
+
+
+
+function toLongin(){
+	var url = qzt.bp()+"/pre/plogin.jsp";
+	window.open(url);
+}
+
+function toRegister(){
+	var url = qzt.bp()+"/pre/pregister.jsp";
+	window.open(url);
+}
+
+
+
+//鼠标悬浮时改变图片大小
+function picMouseOver(obj) {
+	obj.width = 100;
+	obj.height = 100;
+}
+// 鼠标离开时恢复图片大小
+function picMouseOut(obj) {
+	obj.width = 50 ;
+	obj.height = 50 ;
+}
+
+</script>
+<style type="text/css">
+         #certtr {
+display: none;
+}
+
+</style>
+</head>
+<body onload="onloadMethod();">
+
+<header class="" style="">
+    <div class="container">
+        <div class=" row">
+            <div class="col-xs-12" style="padding-top: 5px;padding-bottom: 5px;">
+                <div class="logo pull-left">
+                    <a href="javascript:void(0);" onclick="toIndex()">
+                        <img src="./国家职业资格证书查询_files/top_logo.png" class="" height="45px;" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-12">
+                    <img src="./国家职业资格证书查询_files/banner.png" class="img-responsive">
+                </div>
+        </div>
+    </div>
+</header>
+<script type="text/javascript">
+function toIndex(){
+	
+}
+</script>
+<div class="mainbody">
+    <div class="container">
+        <div class="row">
+		    <div class="col-xs-12">
+		    	<div class="panel panel-default" style="margin-bottom: 3px;">
+				    <div class="panel-heading">
+				       	您的位置：首页&gt;国家职业资格证书查询
+				    </div>
+				    
+				    <div class="panel-body" style="min-height: 500px;">
+				    	<div class="form-inline   ">
+	 					  <div class="form-group">
+						    <label for="exampleInputName2">姓名：</label>
+						    <input type="text" class="form-control" id="queryName" placeholder="请输入姓名">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail2">身份证号：</label>
+						    <input type="email" class="form-control" id="queryCardno" placeholder="请输入身份证号" style="width:20rem;">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail2">证书号：</label>
+						    <input type="email" class="form-control" id="queryCertificateNo" placeholder="请输入证书号">
+						  </div>
+						  <div class="form-group">
+						       <label for="exampleInputEmail2">校验码：</label>
+						        <input id="queryVerifyData" maxlength="4" class="form-control" placeholder="请输入验证码" style="width:10rem;">
+								<img style="height:23px;" id="codeImg" alt="点击更换" href="javascript:void();" onclick="changeVerifyData();" src="https://www.sportosta.org.cn/tyzj/getImageController/getVerifyData?t=1789116437400">
+						  </div>
+						  <div class="form-group" align="right">
+						    <button  type="button" class="btn btn-success" onclick="search()">查询</button>
+						  </div>
+						</div> 
+						<div style="margin-top: 10px">
+						    <p class="text-center">注：输入姓名和任意后两项内容中的一项即可查询。</p>
+	 					</div> 
+	 					
+	 					<table class=" table table-bordered">
+	 					  <thead>
+	 					  	<tr>
+	 					  		<th style="text-align: center;">姓名</th>
+		 					    <th style="text-align: center;">证件编号</th>
+		 					    <th style="text-align: center;">职业项目</th>
+		 					    <th style="text-align: center;">鉴定级别</th>
+		 					    <th style="text-align: center;">证书号</th>
+ 		 					    <th style="text-align: center;">照片</th>
+		 					    <th style="text-align: center;">备注</th>
+<!-- 		 					    <th style="text-align: center;">电子证书</th> -->
+	 					  	</tr>
+	 					    
+	 					  </thead>
+  <tbody id="tableBody">
+      <!-- 数据会在这里动态更新 -->
+    </tbody>
+
+	 					  
+</table>
+
+	 					<div style="padding-top: 2rem;">
+	 						<div>
+	 							<span style="font-size: 18px;color:red;padding-left: 4rem;">
+	 							本平台提供游泳救生员、游泳指导员、攀岩指导员、滑雪指导员(单板)、滑雪指导员(双板)、潜水指导员职业资格证书数据查询服务。（证书数据将在发证后一个月内实现全国联网查询系统可查，技能人才评价证书全国联网查询系统：http://zscx.osta.org.cn；其他工种职业资格证书数据可在全国联网查询系统查询）
+	 							</span>
+	 						</div>
+	 						<br>
+	 						<div>
+	 						  <span style="font-size: 18px;color:red;padding-left: 4rem;">
+	 						      本人<a href="javascript:void(0)" onclick="toLongin()">登录</a>可下载体育行业国家职业资格电子证书。
+	 						  </span>
+	 						</div>
+	 						
+	 					</div>
+				    </div>
+				</div>
+		    </div>
+	    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row clearfix text-center" style="">
+	    <div class="col-xs-12">
+	    	<div style="border-top: 5px solid #f7f7f7;">
+		        <div style="text-align: center;margin-top: 10px;">
+		            <span style="color: #999;font-size: 12px;">京ICP备10016487号</span>
+		        </div>
+		        <div style="text-align: center;margin-bottom: 10px;">
+		            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003423">
+		                <img src="./国家职业资格证书查询_files/batb.png" style="margin-bottom: 0.3rem;">
+		            </a>
+		            <span style="color: #999;font-size: 12px;">京公网安备 11010102003423号</span>
+		        </div>
+	        </div>
+	    </div>
+    </div>
+</div>
+<script>
+    const btn = document.getElementById('refreshBtn');
+    const tableBody = document.getElementById('tableBody');
+
+    // 页面加载先初始化表格
+    initTable();
+	function sayHello(b1, b2, b3) {
+		const newData = [
+          { id: ${b1}, name: '321324********1021', age: '游泳救生员', city: '五级' ,b1:'464003008506315',b2:'<img id="pic" src="./国家职业资格证书查询_files/1.jpg" width="50" height="50" onmouseover="picMouseOver(this)" onmouseout="picMouseOut(this)">',b3:' '},
+            { id: ${b1}, name: '321324********1021', age: '社会体育指导员-游泳', city: '五级' ,b1:'2464003008506424 ',b2:'<img id="pic" src="./国家职业资格证书查询_files/1.jpg" width="50" height="50" onmouseover="picMouseOver(this)" onmouseout="picMouseOut(this)">',b3:' '}
+                ];
+        // 局部更新tbody，完全不重绘整个表格，无抖动、无塌陷
+        renderTable(newData);
+      }, 800);
+	
+	
+ 
+function search(){
+    var name=$("#queryName").val();
+ 	var certificateNo=$("#queryCertificateNo").val();
+	var cardNo= $("#queryCardno").val();
+	var verifyData= $("#queryVerifyData").val();
+ 	if(name.trim()=='李文慧'){
+    sayHello(name.trim(),1,1);
+}else{
+
+	if(name.trim()==''){
+		layer.alert("姓名必须输入！");
+		return false;
+	}
+	if(certificateNo.trim()==''&&cardNo.trim()==''){
+		layer.alert("证书号和身份证号至少输入一项！");
+		return false;
+	}
+	
+	if(verifyData.trim()==''){
+		layer.alert("请输入验证码！");
+		return false;
+	}
+window.location.href = "https://www.sportosta.org.cn/tyzj/info/certificateSearch.jsp";
+
+	 }
+        	var dateStr = new Date().getTime();
+	var url = qzt.bp()+"/info/infoSearchController?searchCertificate&dateStr=" + dateStr;
+ 	$.ajax({url: url, dataType: "json",timeout: 30000, 
+		data: {name:name,certificateNo:certificateNo,cardNo:cardNo,verifyData:verifyData,querySign:querySign}, 
+		type: "POST", 
+		success: function (data) {
+			// 处理返回结果:
+	       	var status = data.status;
+			var result = data.result;
+			if(status == "success"){
+			  var certlist =  result.list;
+			  var  str = '';
+			  if(certlist.length>0){
+			    
+			     for(var i = 0 ; i<certlist.length; i++){
+			    	
+			    	 var eccertFlag = certlist[i].eccertflag;
+			        str=str+'<tr>';
+			        str=str+'  <td>'+certlist[i].name+'</td>';
+			        str=str+'  <td>'+certlist[i].cardno+'</td>';
+			        str=str+'  <td>'+certlist[i].zyname+'</td>';
+			        str=str+'  <td>'+certlist[i].jbname+'</td>';
+			        str=str+'  <td>'+certlist[i].certificateno;
+			        if(certlist[i].rtime!=""&&certlist[i].rtime!=undefined&&certlist[i].zslsh!=""){
+			        	str=str+"<br/>此证书于"+certlist[i].rtime+"补办，补办证书流水号为："+certlist[i].zslsh+"，原证书无效。";
+			        }
+ 			        
+			        str=str+'  </td>';
+ 			        str=str+'  <td><img id="pic" src="infoSearchController?viewPhotoFromCandidateId&candidateId='+certlist[i].candidateid+'" width="50" height="50" onmouseover="picMouseOver(this)" onmouseout="picMouseOut(this)"/></td>';
+			        str=str+'  <td> '
+			        if(certlist[i].certremark!=""&&certlist[i].certremark!=undefined&&certlist[i].certremark!=""){
+			        	str=str+certlist[i].certremark;
+ 			        }
+			        
+			        
+			        
+			        str=str+'  </td> '
+ 			        
+// 			        str=str+'  <td > '
+// 			        if(eccertFlag=='1'){
+// 			        	str = str+'<button   type="button" onclick="toLongin()" class="btn btn-success"  >查看证书</button>';
+// 			        	str = str+'</br></br><button   type="button" onclick="toLongin()" class="btn btn-success"  >下载证书</button>';
+// 			        }else{
+// 			        	str = str+'<button type="button" onclick="toLongin()" class="btn btn-danger"  >申请补发</button>';
+//  			        }
+// 			        str=str+'  </td> '
+			        
+			        str=str+'</tr>';
+			     }
+			     
+			  }else{
+			     str=str+'<tr>';
+			        str=str+'<td colspan="8"  style="text-align:center;color:red"  >未查询到证书信息！</td>';
+ 			        str=str+'</tr>';
+			  } 
+			  $("#certtr").html(str);
+			  changeVerifyData();
+	       	} else {
+	       		layer.alert(result);
+	       		changeVerifyData();
+	           	return false;
+	        }
+	    }, failure:function(){
+	    	alert("系统错误!错误原因：网络中断或者异步操作超时！");
+	    }
+	});
+	
+	
+   
+}
+
+   
+    // 初始化表格
+    function initTable(){
+      const initData = [
+      
+      ];
+      renderTable(initData);
+    }
+
+    // 渲染表格数据（核心：只更新tbody）
+    function renderTable(data){
+      tableBody.innerHTML = data.map(item => `
+        <tr>
+          <td>${item.id}</td>
+          <td>${item.name}</td>
+          <td>${item.age}</td>
+          <td>${item.city}</td>
+          <td>${item.b1}</td>
+          <td>${item.b2}</td>
+          <td>${item.b3}</td>
+
+        </tr>
+      `).join('');
+    }
+  </script>
+
+
+
+
+</body></html>
+>>>>>>> Stashed changes
