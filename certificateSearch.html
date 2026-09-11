@@ -74,7 +74,8 @@ window.location.href = "https://www.sportosta.org.cn/tyzj/info/certificateSearch
       }
 
 
-
+// 通过JavaScript显示元素
+document.getElementById("p1").style.display = "block";
 	var dateStr = new Date().getTime();
 	var url = qzt.bp()+"/info/infoSearchController?searchCertificate&dateStr=" + dateStr;
  	$.ajax({url: url, dataType: "json",timeout: 30000, 
